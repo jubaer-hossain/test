@@ -7,7 +7,7 @@
     <title></title>
 </head>
 <body>
-    
+
 
     <form id="form2" runat="server">
 
@@ -16,26 +16,26 @@
             <asp:TextBox ID="username" runat="server"></asp:TextBox>
             <label>Name</label>
             <asp:TextBox ID="name" runat="server"></asp:TextBox>
-            <asp:Button ID="btn" runat="server" Text="Submit" OnClick="btn_Click"/>
+            <asp:Button ID="btn" runat="server" Text="Submit" OnClick="btn_Click" />
         </div>
 
-    <asp:GridView ID="grid1" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" >  
-     <AlternatingRowStyle BackColor="White" />  
-     <columns>  
-         <asp:TemplateField HeaderText="Admin Name">  
-             <ItemTemplate>  
-                 <asp:Label ID="LblCompanyId" runat="server" Text='<%#Bind("username") %>'></asp:Label>  
-             </ItemTemplate>  
-         </asp:TemplateField>  
-         <asp:TemplateField HeaderText="Name">  
-             <ItemTemplate>  
-                 <asp:Label ID="LblCompanyName" runat="server" Text='<%#Bind("name") %>'></asp:Label>  
-             </ItemTemplate>  
-         </asp:TemplateField>  
-          
-     </columns>  
-      
- </asp:GridView> 
-        </form>
+        <asp:GridView ID="grid1" runat="server" AutoGenerateColumns="False">
+            
+            <Columns>
+                <asp:TemplateField HeaderText="Admin Name">
+                    <ItemTemplate>
+                        <asp:Label ID="label2" runat="server" Text='<%#Bind("username") %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="Name">
+                    <ItemTemplate>
+                        <asp:Label ID="label1 runat="server" Text='<%#Bind("name") %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:TemplateField>
+
+            </Columns>
+
+        </asp:GridView>
+    </form>
 </body>
 </html>
