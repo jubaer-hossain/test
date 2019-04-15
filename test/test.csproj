@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin\dropdownlist.aspx" />
     <Content Include="admin\home.aspx" />
     <Content Include="App_Data\admin_main.mdf" />
     <Content Include="App_Data\admin_main_log.ldf">
@@ -76,6 +77,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin\dropdownlist.aspx.cs">
+      <DependentUpon>dropdownlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\dropdownlist.aspx.designer.cs">
+      <DependentUpon>dropdownlist.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

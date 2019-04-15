@@ -26,11 +26,12 @@
                     <ItemTemplate>
                         <asp:Label ID="label2" runat="server" Text='<%#Bind("username") %>'></asp:Label>
                     </ItemTemplate>
+                    <ItemTemplate>
+                        <asp:Label ID="label3" runat="server" Text='<%#Bind("name") %>'></asp:Label>
+                    </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Name">
-                    <ItemTemplate>
-                        <asp:Label ID="label1 runat="server" Text='<%#Bind("name") %>'></asp:Label>
-                    </ItemTemplate>
+                    
                 </asp:TemplateField>
 
             </Columns>

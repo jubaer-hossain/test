@@ -11,6 +11,7 @@ namespace test.admin
 {
     public partial class home : System.Web.UI.Page
     {
+        // making a new connection //
         SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\jubaer\source\repos\test\test\App_Data\admin_main.mdf;Integrated Security = True");
         protected void Page_Load(object sender, EventArgs e)
         {   
@@ -19,6 +20,7 @@ namespace test.admin
      
         public DataTable display_records()
         {
+            // sqlDataAdapter in action //
             SqlDataAdapter adp = new SqlDataAdapter("select * from admin_info", con);
             DataTable dt = new DataTable();
             adp.Fill(dt);
@@ -43,8 +45,6 @@ namespace test.admin
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "insert into admin_info values ('" + username+ "', '" + name + "')";
             cmd.ExecuteNonQuery();
-
-
         }
     }
 }
