@@ -48,6 +48,20 @@ namespace test.admin
             list2.DataTextField = "username";
             list2.DataValueField = "name";
             list2.DataBind();
+            con.Close();
         }
+
+        // dropdown theke database e input kora //
+
+        protected void btn_insert_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "insert into admin_info values('" + list1.SelectedItem+ "', '" + list1.SelectedValue + "')";
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
+
     }
 }

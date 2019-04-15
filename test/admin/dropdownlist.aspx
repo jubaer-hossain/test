@@ -20,6 +20,7 @@
                 
             </asp:DropDownList>
             <asp:Button ID="btn2" runat="server" Text="with database" OnClick="btn2_Click" />
+            <asp:Button ID="btn_insert" runat="server" Text="insert to database" OnClick="btn_insert_Click" />
         </div>
     </form>
 </body>
