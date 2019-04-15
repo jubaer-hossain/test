@@ -63,5 +63,9 @@ namespace test.admin
             con.Close();
         }
 
+        protected void btn_radio_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

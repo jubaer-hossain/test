@@ -16,11 +16,26 @@
             </asp:DropDownList>
             <asp:Button ID="btn1" runat="server" Text="Select[without database]" OnClick="btn1_Click" />
 
+            <br />
+
             <asp:DropDownList ID="list2" runat="server">
                 
             </asp:DropDownList>
             <asp:Button ID="btn2" runat="server" Text="with database" OnClick="btn2_Click" />
+
+            <br />
+
             <asp:Button ID="btn_insert" runat="server" Text="insert to database" OnClick="btn_insert_Click" />
+
+
+            <br />
+            <asp:RadioButton ID="burger" Text="burger" GroupName="food" runat="server" />
+            <asp:RadioButton ID="pizza" Text="pizza" GroupName="food" runat="server" />
+            
+
+            <asp:Button ID="btn_radio" runat="server" Text="radio select" OnClick="btn_radio_Click"/>
+            
+
         </div>
     </form>
 </body>
